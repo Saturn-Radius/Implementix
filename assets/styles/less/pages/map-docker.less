@@ -1,0 +1,230 @@
+.map-dockbar{
+	position: absolute;
+	z-index: 1000;
+	bottom: -300px;
+	left: calc(~"50% - 310px");
+	min-height: 300px;
+	max-width: 650px;
+	transition: bottom .5s;	
+	.dock-background{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		.dock-bgImg{
+			min-width: 100%;
+			min-height: 100%;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	.dock-toggle{
+		width: 100%;
+		text-align: center;
+		font-size: 30px;
+		color: white;
+		margin-bottom: 38px;
+		.toggle-button{
+			position: absolute;
+			display: inline-block;
+			width: 40px;
+			height: 25px;
+			cursor: pointer;			
+			margin-left: -20px;
+		}
+	}
+	.dock-content{
+		position: relative;
+		width: 100%;
+		height: 100%;
+
+		.dock-icons{
+			position: relative;
+			display: flex;
+			padding: 0px 10px;			
+			.dock-icon{
+				flex: 1 1 auto;
+				cursor: pointer;
+				position: relative;
+				width: 130px;
+				height: 90px;
+
+				border: 1px solid black;
+				border-radius: 10px;
+
+				margin-left: 2%;
+				margin-right: 2%;
+
+				background: white;
+				overflow: hidden;
+				transition: all 0.2s;
+
+				&.selected{
+					background: lightgray;
+					width: 160px;
+					height: 120px;
+				}
+				.dock-iconImg{					
+					width: 100%;
+					height: 100%;
+				}
+				.dock-iconImg2{
+					padding: 20px;
+					width: 100%;
+					height: 100%;
+				}
+				.dock-count{
+					position: absolute;
+					font-weight: 900;
+					bottom: 10px;
+					right: 10px;
+					color: black;
+				}
+				.dock-icon-layer-detail{
+					position: absolute;
+					bottom: 12px;
+					font-size: 16px;
+					width: 100%;
+					text-align: center;
+					color: black;
+				}
+			}			
+		}
+		.dock-location{
+			padding: 20px 20px 10px 20px;
+			color: white;
+			font-weight: 900;
+			.location-name{
+				padding: 5px 0px;
+				font-size: 26px;
+				line-height: 26px;
+				display: flex;
+				.location-name-details{
+					margin-right: 10px;
+				}
+				.location-name-address{
+					max-width: 400px;
+				}
+			}
+			.location-row{
+				padding: 15px 0px;
+				font-size: 14px;
+				line-height: 14px;
+				.location-field{
+					color: white;
+				}
+				.location-value{
+					color: lightblue;
+				}				
+				.color_green{
+					color: lightgreen;
+				}
+				.color_red{
+					color: red;
+				}
+				.color_blue{
+					color: lightblue;
+				}
+			}
+		}	
+		
+		.dock-signs,
+		.dock-vehicles,
+		.dock-promos{
+			margin: 20px;
+			overflow: scroll;
+			max-height: 200px;
+			max-width: 100%;
+			background: white;
+		}
+		.table_expand{
+			display: flex;
+			position: absolute;
+			color: white;
+			right: 18px;
+			top: 95px;
+			.expand_title{
+				height: 40px;
+				line-height: 40px;
+				margin-right: 5px;
+			}
+			.ui.toggle.checkbox label:before{
+				background: rgba(0,0,0,.25);
+			}
+		}
+		.dock-promos{
+			.table_expand{
+				left: 18px;
+			}
+		}
+		.ReactTable{
+			.rt-table{
+				overflow: unset;
+			}
+			.rt-resizable-header-content{
+				white-space: normal;
+				overflow: visible;
+			}	
+			.rt-td{
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				text-align: center;
+				white-space: normal;
+			}
+			.td-image{
+				display: block;
+				.td-photo{
+					max-width: 100px;
+					max-height: 60px;
+				}
+			}
+		}
+		.dock-table{
+			margin-bottom: 0px;
+			border-collapse: collapse;
+			color: #003056;
+			background: white;
+			font-size: 14px;
+			border-radius: 5px;
+			overflow: auto;
+
+			th,td{
+				border: 1px solid #B0BECA;
+				text-align: center;
+				vertical-align: middle;
+			}
+			thead{
+				font-size: 16px;
+				font-weight: bold;
+				.th-photo{
+					width: 100px;
+				}
+				.th-vehicle-type{
+					width: 200px;
+				}
+				.th-vehicle-number{
+					width: 250px;
+				}
+				.th-signs-item,
+				.th-promos-item,
+				.th-promos-start,
+				.th-promos-end{
+					width: 100px;
+				}
+				.th-promos-instructions{
+					width: 150px;
+				}
+			}
+			tbody{
+				tr{
+					cursor: pointer;
+				}
+			}
+			.td-photo{
+				max-width: 100px;
+				max-height: 60px;
+			}
+		}
+	}
+}

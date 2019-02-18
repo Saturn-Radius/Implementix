@@ -1,0 +1,15 @@
+*~
+*.swp
+*.swo
+*.log
+*.node
+*.orig
+.idea
+.DS_Store
+node_modules/
+build/
+dist/
+test/out-fixtures/*
+test/watch-*.txt
+/json
+/api/log

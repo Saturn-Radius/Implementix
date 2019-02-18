@@ -1,0 +1,77 @@
+body
+  margin: 0
+.layout
+  display: flex
+  min-height: 100%
+  flex-direction: column
+  margin: 0 1px 0 1px
+
+.header
+  height: 40px
+  background-color: #EFF6FD
+  color: #fff
+  display: flex
+  align-items: center
+  // justify-content: space-between
+  padding: 0 10px 0 10px
+  border-bottom: 1px solid #222
+  a
+    color: #fff
+  .dropdown
+    margin-right: 20px
+    color: black
+    select
+      margin-left: 5px
+      width: 100px
+      font-size: 14px
+
+.logo
+  width: 1.3em
+  height: 1.3em
+  margin: 0.3em
+  background-size: contain
+  background-repeat: no-repeat
+
+.main
+  flex: 1
+  display: flex
+  .map
+    width: 100%
+    display: flex
+  .detail_panel
+    position: absolute
+    background: white
+    right: 1px
+    z-index: 1000000
+    width: 450px
+    border: 1px solid grey
+    .title
+      background: #ccc
+      padding: 5px 10px
+      border-bottom: 2px solid #222
+      height: 30px
+      .detail_title
+        float: left        
+        line-height: 30px
+      .close_button
+        cursor: pointer
+        background: url('assets/resources/images/close.png')
+        background-size: 20px 20px
+        background-repeat: no-repeat
+        width: 20px
+        height: 20px
+        margin-top: 5px
+        float: right
+    .details
+      padding: 5px 10px
+
+
+.footer
+  height: 2em
+  background-color: #004336
+  color: #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  a
+    color: #fff

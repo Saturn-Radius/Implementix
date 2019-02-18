@@ -1,0 +1,141 @@
+.detail_popup{
+	display: none;
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.35);	
+	&.visible{
+		display: block;
+	}
+	img{
+		cursor: pointer;
+	}
+	.detail_container{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		background: #083154;
+		border-radius: 5px;
+		overflow: hidden;
+		.box-shadow2(10, 10, 20, 0, rgba(0,0,0,0.75));
+		.detail_toggle{
+			position: fixed;
+			right: 10px;
+			top: 10px;
+			cursor: pointer;
+			z-index: 1002;
+			.detail_btnToggle{
+				width: 25px;
+			}
+		}
+		.content_container{
+			position: relative;
+			color: white;
+			overflow: hidden;
+			.color_value{
+				color: lightblue;
+			}
+			.color_red{
+				color: red;
+			}
+			.color_green{
+				color: lightgreen;
+			}
+			.title{
+				font-size: 26px;
+				line-height: 30px;
+				font-weight: bold;
+				text-decoration: underline;
+			}
+			.section{
+				margin: 15px 0px;
+				color: white;
+				line-height: 18px;
+				font-size: 13px;
+				.field_section2{
+					display: flex;
+				}
+				.field_name1{
+				}
+				.field_name2{
+					display: inline;
+					margin-right: 5px;
+				}
+				.field_value1{
+				}	
+				.field_value2{
+					display: inline;
+				}
+				.brandCompliance{
+					margin: 10px 0px;
+				}
+			}
+			.detail{
+				margin: 20px;
+				display: flex;				
+				.photo{
+					width: 250px;
+					height: 250px;
+					object-fit: cover;
+				}
+				.left{
+					width: 250px;
+					margin-right: 15px;					
+					.field_image_signs{
+						.photo{
+							width: 80px;
+							height: 80px;
+							object-fit: cover;
+							margin: 7px;
+							border: 1px solid white;
+						}
+					}
+				}
+				.right{
+					margin: 0 auto;
+					width: 300px;
+					.photo{
+						margin-top: 5px;
+					}
+					// max-height: 350px;
+					// overflow-y: auto;
+					padding: 0px 25px 0px 25px;
+					.slick-next{
+						right: -25px;
+					}
+					.field_image_vehicles{
+						margin-left: 0px !important;
+						margin-right: 0px !important;
+						.field_image_vehicle{	
+							.photo{
+								width: 100%;
+								height: 100%;
+								object-fit: cover;
+								overflow-y: hidden;
+								border: 2px solid black;
+							}
+						}
+					}
+				}
+			}
+			.promo_detail{
+				width: 600px;
+				padding: 20px;
+				.image{
+					text-align: center;
+				}
+				.photo{
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+	}	
+}

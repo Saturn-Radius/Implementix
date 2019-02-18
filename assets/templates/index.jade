@@ -1,0 +1,16 @@
+extends ./layout.jade
+
+block header
+  link(rel="stylesheet", href="ASSET{style.css,min}")
+  link(rel="stylesheet", href="ASSET{style_sass.css,min}")
+  link(rel="stylesheet", href="ASSET{assets/resources/plugins/semantic.min.css}")
+
+block content
+  div#app-container
+
+block app
+  script(type="text/javascript", src="ASSET{assets/scripts/vendors.js,min}")
+  script(type="text/javascript", src="ASSET{assets/scripts/app.js,min}")
+
+block plugins
+  script(type="text/javascript", src="ASSET{assets/resources/plugins/jquery.js}")

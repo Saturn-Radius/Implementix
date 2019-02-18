@@ -1,0 +1,18 @@
+<EntityDescriptor entityID="implementix-sso" xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
+  <IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <KeyDescriptor use="signing">
+      <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <X509Data>
+          <X509Certificate>MIIFVzCCBD+gAwIBAgIQWAzaEtuBlz27M8iKn1VaoDANBgkqhkiG9w0BAQsFADCBkDELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4GA1UEBxMHU2FsZm9yZDEaMBgGA1UEChMRQ09NT0RPIENBIExpbWl0ZWQxNjA0BgNVBAMTLUNPTU9ETyBSU0EgRG9tYWluIFZhbGlkYXRpb24gU2VjdXJlIFNlcnZlciBDQTAeFw0xNzExMTcwMDAwMDBaFw0xODExMTcyMzU5NTlaMFUxITAfBgNVBAsTGERvbWFpbiBDb250cm9sIFZhbGlkYXRlZDEUMBIGA1UECxMLUG9zaXRpdmVTU0wxGjAYBgNVBAMTEWl4LXRvdWNocG9pbnQuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA24k72tUi58VMvFgtNa9b/A5UjFwUrwrX0CMB7C+SMkUon6U1oU7x5Yh0zVbqPnSRQcoIhHyYKhoV+YAWAxVJR7Ae7XhcRbMd1rhRD2HowDBOPVLh5MB7gUPqbF2XHBkLOLpWAgt1HLtDv4hs/c62BYYg/kCGhWzghzKscEVYOGTcMbuDGfMJqvX0HIwlsuHFey4BM7iihTO/y9XZscaPcfZZiJ3UpeV+/HZ7kF2165aURTq72QJ582lC/wpW/wyn+bnmnZIeTsI8bqIMXHPuA5U3tX9QFfzla/FMJb+KzEbQ3tQ1Ff1T+O4bwVLHHoJ0BFNs7346wzHgeCw+MFUv1QIDAQABo4IB5TCCAeEwHwYDVR0jBBgwFoAUkK9qOpRaC9iQ6hJWc99DtDoo2ucwHQYDVR0OBBYEFKgGnuVdlJku58ovdB9FGw5YT2xjMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBPBgNVHSAESDBGMDoGCysGAQQBsjEBAgIHMCswKQYIKwYBBQUHAgEWHWh0dHBzOi8vc2VjdXJlLmNvbW9kby5jb20vQ1BTMAgGBmeBDAECATBUBgNVHR8ETTBLMEmgR6BFhkNodHRwOi8vY3JsLmNvbW9kb2NhLmNvbS9DT01PRE9SU0FEb21haW5WYWxpZGF0aW9uU2VjdXJlU2VydmVyQ0EuY3JsMIGFBggrBgEFBQcBAQR5MHcwTwYIKwYBBQUHMAKGQ2h0dHA6Ly9jcnQuY29tb2RvY2EuY29tL0NPTU9ET1JTQURvbWFpblZhbGlkYXRpb25TZWN1cmVTZXJ2ZXJDQS5jcnQwJAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmNvbW9kb2NhLmNvbTAzBgNVHREELDAqghFpeC10b3VjaHBvaW50LmNvbYIVd3d3Lml4LXRvdWNocG9pbnQuY29tMA0GCSqGSIb3DQEBCwUAA4IBAQATVIyd6YElua2sLwIpuFt6RR8qIucpXw+IDpHFqAIqj4Sn5D7UwEp1pWhAMtOd/Fv8psnw2UkNxwsuHk0sz26B3Y4x+H7xLR5m0vGHeLdAG1ssdrAZflEdhDsI/k3E9v2FrcmUtfm4ZQKJQOS6QuLkaUVHpViSUeLSGzXC6vS2LhofFoxKXJe38OngFSc6caZV6blJaHmucE6HCgIU9mm5apohFkbC6+kVilQIpmJlca3GM7Bcc1n1fw6bAX2n33JW8nsy7xIbnJbuat80BXfpxs6o3csydaPZgWJB7t3PA//tutmvPCPr5zdkd9cl+k5Uir3tORUx9aL/cxykJkXt</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </KeyDescriptor>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://ix-touchpoint.com/logout"/>
+    <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</NameIDFormat>
+    <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+    <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://ix-touchpoint.com/idp"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://ix-touchpoint.com/idp"/>
+    <Attribute Name="email" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="E-Mail Address" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+  </IDPSSODescriptor>
+</EntityDescriptor>

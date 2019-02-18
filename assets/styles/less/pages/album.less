@@ -1,0 +1,71 @@
+@keyframes LazyLoadKeyFrame {
+	0%   {opacity: 0;}
+	100% {opacity: 1;}
+}
+.album_container{
+	min-height: 100%;
+	background-color: #577892;
+	padding: 20px;
+	.albumview_container{
+		.location{
+			margin: 20px 0px;
+			.location_address{
+				font-size: 18px;
+				color: white;
+				cursor: pointer;
+			}
+			.location_album{
+				width: 100%;
+				margin: 20px auto 0 auto;
+				.card_container{
+					display: inline-block;
+					margin: 0 0.75%;
+					width: 12.7%;
+					.LazyLoadImg {
+						animation-name: LazyLoadKeyFrame;
+						animation-timing-function: ease-in-out;
+						animation-duration: 4s;
+					}
+					&:hover .card{
+						transform: scale(1.15);
+						cursor: pointer;
+					}
+					.LazyLoad {
+						display:block;
+						margin:0 auto;
+						width: 200px;
+						height: 200px;
+					}
+					.card {
+						position: relative;
+						overflow: hidden;
+						width: 200px;
+						height: 200px;
+						color: #c6cbd0;
+						.box-shadow2(10, 10, 51, 0, rgba(0,0,0,0.75));
+						.transition3(transform, .25, ease-in-out);
+
+						.LazyLoadImg{
+							border: none;
+							width: 200px;
+							height: 200px;
+							object-fit: cover;
+							display: block;
+						}
+						.description{
+							background: black;
+							opacity: 0.7;
+							position: absolute;
+							bottom: -1px;
+							padding: 5px;
+							width: 100%;
+							text-align: center;
+							font-size: 16px;
+							line-height: 16px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

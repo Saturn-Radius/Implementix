@@ -1,0 +1,190 @@
+#location-tooltip {
+	pointer-events: none;
+	display: none;
+	position:absolute;
+	z-index: 1000;
+	width: 300px;
+	.location-background{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0.7;
+		.tooltip-img{
+			min-width: 100%;
+			min-height: 100%;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	.location-content-mobile{
+		position: relative;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		padding: 10px 10px 30px 10px;
+		.location-sitemap{
+			width: 150px;
+			min-height: 80px;
+			max-height: 150px;
+			padding: 5px 10px 10px 10px;
+			.sitemap-border{
+				width: 100%;
+				height: 100%;
+				min-height: 80px;
+				border-radius: 5px;
+				border: 1.5px solid red;
+				overflow: hidden;
+				#location-sitemap{
+					min-width: 100%;
+					min-height: 100%;
+					max-width: 100%;
+					max-height: 100%;
+				}
+			}
+		}
+		.location-detail{
+			color: white;
+			width: 150px;
+			height: 100%;
+			padding-top: 5px;
+			#location-name{
+				font-size: 15px;
+				font-weight: bold;
+				text-align: left;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+			}
+			#location-address{
+				font-size: 12px;
+			}
+		}
+	}
+	.location-content{
+		position: relative;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		#location-name{
+			margin-top: 5px;
+			color: white;
+			width: 100%;
+			z-index: 100;
+			font-size: 20px;
+			text-align: center;
+			padding: 10px;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+		.location-sitemap{
+			padding: 5px 20px;
+			.sitemap-border{
+				width: 100%;
+				max-height: 400px;
+				min-height: 100px;
+				border-radius: 5px;
+				border: 1.5px solid red;
+				overflow: hidden;
+				#location-sitemap{
+					min-width: 100%;
+					min-height: 100%;
+					max-width: 100%;
+					max-height: 100%;
+				}
+			}
+		}
+		.location-lastbrand{
+			color: white;
+			font-size: 12px;
+			line-height: 15px;
+			top: 190px;
+			width: 100%;
+			padding: 5px 20px;
+		}
+		.location-brandcompliance{
+			color: white;
+			font-size: 12px;
+			line-height: 15px;
+			width: 100%;
+			padding: 5px 20px;
+		}
+		.location-percentsigns{
+			color: white;
+			font-size: 12px;
+			line-height: 15px;
+			width: 100%;
+			padding: 5px 20px;
+		}
+		.location-spacing{
+			height: 50px;
+		}
+		#location-lastbrand{
+			color: lightblue;
+		}
+	}	
+}
+#signs-tooltip{
+	pointer-events: none;
+	display: none;
+	position:absolute;
+	z-index: 1000;
+	.signs-background{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0.7;
+		.tooltip-img{
+			min-width: 100%;
+			min-height: 100%;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	.signs-content{
+		position: relative;
+		top: 0px;
+		width: 200px;
+		padding: 10px 10px 45px 10px;
+		text-align: center;
+		div{
+			color: white;
+			font-size: 15px;
+		}
+		.sign-border{
+			width: 100%;
+			border-radius: 5px;
+			border: 1.5px solid red;
+			overflow: hidden;
+			max-height: 400px;
+			min-height: 100px;
+			#tooltip-signs-img{			
+				max-width: 100%;
+				max-height: 100%;
+				min-width: 100%;
+				min-height: 100%;
+			}
+		}		
+	}
+}
+#promo-tooltip{
+	pointer-events: none;
+	display: none;
+	position:absolute;
+	z-index: 1000;
+	.tooltip-promo-img{
+		width: 100px;
+	}
+}
+#vehicle-tooltip{
+	pointer-events: none;
+	display: none;
+	position:absolute;
+	z-index: 1000;
+	.tooltip-vehicle-img{
+		width: 100px;
+	}
+}

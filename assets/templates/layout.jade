@@ -1,0 +1,28 @@
+doctype html
+html.default(dir=dir)
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=Edge,chrome=1')
+    title Implement-ix
+
+    //- seo
+    meta(name='application-name', content='Implement-ix')
+    meta(name='author', content='Eric Liu, effectivevigorous@gmail.com')
+    meta(name='description', content='Implement-ix')
+    meta(name='keywords', content='admin, template, wrapbootstrap, metro, modern, flat, responsive, rubix, react, redux, laravel')
+    meta(name='robots', content='index, follow')
+    meta(name='viewport', content='width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+
+    link(rel="shortcut icon", href="ASSET{assets/resources/images/logo.ico}") 
+
+  body
+    //- script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiQjpst9dmJCVVIcp4fLBN9KjtRleTN1w&libraries=places")
+    script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiQjpst9dmJCVVIcp4fLBN9KjtRleTN1w&libraries=visualization")
+    script(type="text/javascript", src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js")
+    script(type="text/javascript", src="ASSET{assets/resources/plugins/googlemap/markerwithlabel.js}")
+    //- script(id='preloadedData', type='application/json')!=data
+    //- test
+    block header
+    block plugins
+    block content
+    block app

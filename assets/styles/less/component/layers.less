@@ -1,0 +1,71 @@
+.layers_container{
+	position: absolute;
+	right: 10px;
+	top: 85px;
+	z-index: 10000;
+	.layers_toggle{
+		cursor: pointer;
+		width: 50px;
+		height: 50px;
+		.toggle_button{
+			width: 100%;
+		}
+	}
+	.layers_list{
+		position: absolute;
+		right: 70px;
+		top: 2px;
+		background: white;
+		border-radius: 5px;
+		box-shadow: 0px 5px 15px 0px #B0BECA;
+		overflow: hidden;
+		.layers_item{
+			cursor: pointer;
+			display: flex;
+			height: 35px;
+			font-size: 15px;
+			line-height: 35px;
+			padding: 0px 15px;
+			color: #003056;
+			border-bottom: 1px solid #B0BECA;
+			.item_title{
+				width: 115px;
+			}
+			.item_icon{
+				width: 25px;
+			}
+			&.selected{
+				background: #B0BECA;
+			}
+		}
+		.item_cluster{
+			display: flex;
+			background: lightblue;
+			.cluster_title{
+				height: 35px;
+				font-size: 15px;
+				line-height: 35px;
+				padding: 3px 10px 0px 20px;
+				color: #003056;
+			}
+		}
+		.item_heatmap{
+			display: flex;
+			background: bisque;
+			.heatmap_title{
+				height: 35px;
+				font-size: 15px;
+				line-height: 35px;
+				padding: 3px 10px 0px 27px;
+				color: #003056;
+			}
+		}
+		.item_count{
+			text-align: center;
+			font-size: 15px;
+			line-height: 15px;
+			padding: 10px;
+			background: cornflowerblue;
+		}
+	}
+}
